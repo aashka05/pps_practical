@@ -1,11 +1,15 @@
-// prac8_02.cpp : Defines the entry point for the console application.
-//
+#include <stdio.h>
+#include <conio.h>
 
-#include "stdafx.h"
-
-
-int _tmain(int argc, _TCHAR* argv[])
+int sum_n(int n)
 {
-	return 0;
+	return n * (n + 1) / 2;
 }
 
+void main()
+{
+	int n;
+	printf("Enter n: ");
+	scanf("%d", &n);
+	printf("%d\n", sum_n(n));
+}
