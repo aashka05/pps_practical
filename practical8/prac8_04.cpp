@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-double power(double x, double y)
+double power(int x, int y)
 {
 	int i;
 	double a = 1;
@@ -17,10 +17,10 @@ double power(double x, double y)
 
 void main()
 {
-	double x, y;
+	int x, y;
 	printf("Enter value of x: ");
-	scanf("%lf", &x);
+	scanf("%d", &x);
 	printf("Enter value of y: ");
-	scanf("%lf", &y);
-	printf("%.2lf ^ %.2lf = %.2lf\n", x, y, power(x,y));
+	scanf("%d", &y);
+	printf("%d ^ %d = %.2lf\n", x, y, power(x,y));
 }
